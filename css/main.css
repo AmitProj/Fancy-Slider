@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+html,body{scroll-behavior: smooth;}
+a.backbtn {
+  text-decoration: none;
+  padding: 8px 39px;
+  position: absolute;
+  color: #fff;
+  background: #ffffff52;
+  /* border: 2px solid #fff; */
+  text-transform: uppercase;
+  top: 5px;
+  left: 5%;
+  transition: all 0.4s ease;
+}
+a.backbtn:hover{
+  background: #fff;
+  color: #000;
+}
+.slider-nav{border-left: 1px solid #ffffffb2;}
+.slider-cover {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slider-cover div{padding: 0;}
+.slider-nav h3 span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.dual-slider{
+    padding: 80px 0;
+    height: 100vh;
+    overflow: hidden;
+    overflow-x: hidden;
+}
+.slider-single>div{
+    height: 410px;
+    width: 410px;
+    /* border: 1px solid #b9b7b7; */
+    border-radius: 79%;
+    background: #f9f9f96b;
+    color: #fff;
+    text-align: center;
+}
+.slider-single button.flavourBtn{
+    display: block;
+    padding: 12px 30px;
+    margin: 20px auto;
+    border: none;
+    background: #f7f7f7;
+    color: #000;
+    border-radius: 30px;
+    border: 2px solid #fff;
+    transition: all 0.4s ease;
+}
+.slider-single button:hover{
+  background: transparent;
+  border: 2px solid #fff;
+}
+.slider-1 h4{text-transform: uppercase; color: #ffffff;}
+.slider-1 small{
+    display: block;
+    line-height: 20px;
+}
+.slider-1{text-align: center;}
+button.slick-arrow {
+    position: absolute;
+    top: 155%;
+    right: -36%;
+    background: rgba(255, 255, 255, 0.185);
+    z-index: 5;
+    width: 100px;
+    height: 45px;
+    backdrop-filter: blur(60px);
+    border-radius: 30px;
+}
+.slick-prev {left: 100%;}
+.slick-next{right: -86%!important;}
+.slick-prev.slick-disabled:before, 
+.slick-next.slick-disabled:before {
+    opacity: .25;
+    padding: 10px;
+    border: 1px solid rgb(255, 255, 255);
+}
+.slick-prev:before, 
+.slick-next:before {
+    border-radius: 30px;
+    opacity: .25;
+    padding: 10px;
+    background: #ffffff2a;
+    border: 1px solid #e9e9e9;
+    width: 100px;
+    display: inline-flex;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bootstrap-icons';
+    color: #ffffff;
+    font-size: 40px;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.slick-prev:before{content: '\F12F';}
+.slick-next:before{content: '\F138';}
+.slider-cover-bg{height: 100vh;background: #3498db;}
+.slider-cover-bg:nth-child(1){background: linear-gradient(88deg, #4f8f1d, #c6f397);}
+.slider-cover-bg:nth-child(2){background: linear-gradient(304deg, #a6c3ed, #1791ba);}
+.slider-cover-bg:nth-child(3){background:linear-gradient(156deg, #e970ab, #e97cad);}
+.slider-cover-bg:nth-child(4){background: linear-gradient(59deg, #7e5b4c, #e2beb0);}
+.slider-0 button.slick-arrow,
+.slider-2 button.slick-arrow{
+    cursor: none;
+    pointer-events: none;
+    opacity: 0;
+}
+
+@media (max-width:820px) {
+.slider-contant-box{flex-direction: column-reverse;} 
+.slider-nav {border-left: 0px solid #ffffffb2;}
+.slider-single>div{
+    height: 500px;
+    width: 500px;
+    padding: 30px;
+}
+.ice-box img {margin: auto;}
+button.slick-arrow {
+    position: absolute;
+    top: 195%;
+    right: unset;
+    left: 0;
+}
+.slider-cover-bg:nth-child(1){background: linear-gradient(0deg, #4f8f1d, #c6f397);}
+.slider-cover-bg:nth-child(2){background: linear-gradient(180deg, #a6c3ed, #1791ba);}
+.slider-cover-bg:nth-child(3){background:linear-gradient(0deg, #e970ab, #e97cad);}
+.slider-cover-bg:nth-child(4){background: linear-gradient(0deg, #7e5b4c, #e2beb0);}
+
+}
+@media (max-width:768px) {
+    button.slick-arrow {
+      position: absolute;
+      top: 155%;
+    }
+    .slider-single>div {
+      height: 400px;
+      width: 400px;
+    }
+}
+@media (max-width:430px) {
+    .ice-box img {margin: auto;height: 300px;} 
+}
+@media (max-width:375px) {
+  .ice-box img {margin: auto;height: 250px;} 
+  .slider-single>div {
+    height: 290px;
+    width: 350px;
+    border-radius: 0;
+}
+button.slick-arrow,
+.slick-prev:before, 
+.slick-next:before{border-radius: 0;}
+button.slick-arrow {
+  position: absolute;
+  top: 103%;
+  left: -15px;
+}
+}
