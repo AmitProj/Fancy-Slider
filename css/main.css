@@ -87,8 +87,8 @@ button.slick-arrow {
     backdrop-filter: blur(60px);
     border-radius: 30px;
 }
-.slick-prev {left: 100%;}
-.slick-next{right: -86%!important;}
+.slick-prev {left: 175%;}
+.slick-next{right: -145%!important;}
 .slick-prev.slick-disabled:before, 
 .slick-next.slick-disabled:before {
     opacity: .25;
